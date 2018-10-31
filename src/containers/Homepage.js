@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router';
 import styled from 'styled-components';
 import backgroundImage from '../images/bg.png';
 import BrowseCard from '../components/BrowseCard';
@@ -147,4 +148,4 @@ class Homepage extends Component {
     }
 }
 
-export default Homepage;
+export default withRouter(Homepage);
