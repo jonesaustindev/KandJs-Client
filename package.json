@@ -4,8 +4,11 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^3.3.1",
+    "final-form": "^4.10.0",
+    "final-form-material-ui": "^0.3.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
+    "react-final-form": "^3.6.7",
     "react-material-ui": "^0.0.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.0.4",

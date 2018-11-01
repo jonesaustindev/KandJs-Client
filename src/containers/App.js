@@ -3,6 +3,7 @@ import { Route, Link, Redirect, Switch, BrowserRouter as Router, } from 'react-r
 import Homepage from './Homepage';
 import About from './About';
 import Navbar from '../components/Navbar';
+import Contact from './Contact';
 
 class App extends Component {
     render() {
@@ -12,6 +13,7 @@ class App extends Component {
                     <Switch>
                         <Route exact path='/' component={Homepage} />
                         <Route exact path='/about' component={About} />
+                        <Route exact path='/contact' component={Contact} />
                     </Switch>
             </div>
         )
