@@ -4,6 +4,9 @@ import Homepage from './Homepage';
 import About from './About';
 import Navbar from '../components/Navbar';
 import Contact from './Contact';
+import FAQ from './FAQ';
+import Browse from './Browse';
+import Order from './Order';
 
 class App extends Component {
     render() {
@@ -14,6 +17,9 @@ class App extends Component {
                         <Route exact path='/' component={Homepage} />
                         <Route exact path='/about' component={About} />
                         <Route exact path='/contact' component={Contact} />
+                        <Route exact path='/faq' component={FAQ} />
+                        <Route exact path='/browse' component={Browse} />
+                        <Route exact path='/order' component={Order} />
                     </Switch>
             </div>
         )

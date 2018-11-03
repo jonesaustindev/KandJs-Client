@@ -57,6 +57,9 @@ class Navbar extends Component {
                             <Link style={{ textDecoration: 'none' }} to='/'><Button style={{ color: '#F7F0F5' }}>Home</Button></Link>
                             <Link style={{ textDecoration: 'none' }} to='/about'><Button style={{ color: '#F7F0F5' }}>About</Button></Link>
                             <Link style={{ textDecoration: 'none' }} to='/contact'><Button style={{ color: '#F7F0F5' }}>Contact</Button></Link>
+                            <Link style={{ textDecoration: 'none' }} to='/faq'><Button style={{ color: '#F7F0F5' }}>FAQ</Button></Link>
+                            <Link style={{ textDecoration: 'none' }} to='/browse'><Button style={{ color: '#F7F0F5' }}>Browse</Button></Link>
+                            <Link style={{ textDecoration: 'none' }} to='/order'><Button style={{ color: '#F7F0F5' }}>Order</Button></Link>
                         </NavButtons>
                     </Toolbar>
                 </AppBar>

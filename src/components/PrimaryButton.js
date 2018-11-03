@@ -10,7 +10,7 @@ const styles = {
         border: 0,
         color: '#F7F0F5',
         height: 48,
-        padding: '0 25px',
+        padding: '15px 20px',
         boxShadow: '0 3px 5px 2px rgba(0, 0, 0, .08)'
     }
 }
@@ -21,6 +21,7 @@ function PrimaryButton(props) {
 
     return (
         <Button
+        type='submit'
         classes={{
             root: classes.root
         }}

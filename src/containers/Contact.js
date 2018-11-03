@@ -4,24 +4,34 @@ import styled from 'styled-components';
 import { Form, Field } from 'react-final-form';
 import ContactForm from '../components/ContactForm';
 
-const FormWrapper = styled.div`
-    padding-top: 100px;
+const ContactPage = styled.div`
+  background-color: #F7F0F5;
+  height: 900px;
 `
 
-const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const FormWrapper = styled.div`
+  margin: auto;
+  width: 70%;
+  padding-top: 100px;
+`
 
-const onSubmit = async values => {
-    await sleep(500);
-    window.alert(JSON.stringify(values, 0, 2));
-}
+const ContactTitle = styled.h2`
+  font-family: 'kaushan_scriptregular';
+  text-align: center;
+  font-size: 70px;
+  margin-bottom: 0;
+  color: #FF86A5;
+`
 
 class Contact extends Component {
   render() {
     return (
-      <FormWrapper>
-        <h2>Contact</h2>
-        <ContactForm />
-      </FormWrapper>
+      <ContactPage>
+        <FormWrapper>
+          <ContactTitle>Contact</ContactTitle>
+          <ContactForm />
+        </FormWrapper>
+      </ContactPage>
     )
   }
 }
