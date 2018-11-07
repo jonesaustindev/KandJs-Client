@@ -3,6 +3,7 @@ import { withRouter } from 'react-router';
 import styled from 'styled-components';
 import { Form, Field } from 'react-final-form';
 import ContactForm from '../components/ContactForm';
+import Footer from '../components/Footer';
 
 const ContactPage = styled.div`
   background-color: #F7F0F5;
@@ -26,12 +27,15 @@ const ContactTitle = styled.h2`
 class Contact extends Component {
   render() {
     return (
-      <ContactPage>
-        <FormWrapper>
-          <ContactTitle>Contact</ContactTitle>
-          <ContactForm />
-        </FormWrapper>
-      </ContactPage>
+      <div>
+        <ContactPage>
+          <FormWrapper>
+            <ContactTitle>Contact</ContactTitle>
+            <ContactForm />
+          </FormWrapper>
+        </ContactPage>
+        <Footer />
+      </div>
     )
   }
 }

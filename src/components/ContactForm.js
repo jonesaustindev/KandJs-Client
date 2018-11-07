@@ -13,7 +13,7 @@ const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 const onSubmit = async values => {
     await sleep(300)
     window.alert(JSON.stringify(values, 0, 2))
-  }
+}
 
 const FormFieldDiv = styled.div`
   padding-bottom: 10px;
@@ -27,32 +27,35 @@ class ContactForm extends Component {
                     <Form
                         onSubmit={onSubmit}
                         render={({ handleSubmit, form, submitting, pristine, values }) => (
-                        <form onSubmit={handleSubmit}>
-                            <div>
-                                <FormFieldDiv id='name'>
-                                    <Field label='Enter your name' name="name" component={TextField} placeholder="Name" />
-                                </FormFieldDiv>
-
-                                <FormFieldDiv id='email'>
-                                    <Field label='Enter your email' type='text' name="email" component={TextField} placeholder="Email" />
-                                </FormFieldDiv>
-
-                                <FormFieldDiv id='message'>
-                                    <Field
-                                    name="message"
-                                    component={TextField}
-                                    fullWidth
-                                    placeholder='Message'
-                                    label='Write to us'
-                                    />
-                                </FormFieldDiv>
+                            <form onSubmit={handleSubmit}>
                                 <div>
-                                    <PrimaryButton
-                                        text='Submit'
-                                    />
+                                    <FormFieldDiv id='name'>
+                                        <Field label='Enter your name' name="name" component={TextField} placeholder="Name" />
+                                    </FormFieldDiv>
+
+                                    <FormFieldDiv id='email'>
+                                        <Field label='Enter your email' type='text' name="email" component={TextField} placeholder="Email" />
+                                    </FormFieldDiv>
+
+                                    <FormFieldDiv id='message'>
+                                        <Field
+                                            name="message"
+                                            component={TextField}
+                                            fullWidth
+                                            placeholder='Message'
+                                            label='Write to us'
+                                            multiline={true}
+                                            rows={2}
+                                            rowsMax={4}
+                                        />
+                                    </FormFieldDiv>
+                                    <div>
+                                        <PrimaryButton
+                                            text='Submit'
+                                        />
+                                    </div>
                                 </div>
-                            </div>
-                        </form>
+                            </form>
                         )}
                     />
                 </CardContent>
